@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @EnableAutoConfiguration
-public class HelloSpringBootBenchmark {
+public class App {
 
     @RequestMapping("/")
     @ResponseBody
@@ -17,6 +17,6 @@ public class HelloSpringBootBenchmark {
     }
 
     public static void main(final String[] args) {
-        SpringApplication.run(HelloSpringBootBenchmark.class, args);
+        SpringApplication.run(App.class, args);
     }
 }

@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.minijax</groupId>
         <artifactId>minijax-benchmarks</artifactId>
-        <version>0.0.21-SNAPSHOT</version>
+        <version>0.0.2</version>
     </parent>
     <artifactId>minijax-benchmark-hello-minijax</artifactId>
     <packaging>jar</packaging>
@@ -13,7 +13,7 @@
         <dependency>
             <groupId>org.minijax</groupId>
             <artifactId>minijax-core</artifactId>
-            <version>${project.version}</version>
+            <version>${minijax.version}</version>
         </dependency>
     </dependencies>
     <build>
@@ -43,7 +43,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.example.benchmarks.HelloMinijaxBenchmark</mainClass>
+                                    <mainClass>com.example.benchmarks.App</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

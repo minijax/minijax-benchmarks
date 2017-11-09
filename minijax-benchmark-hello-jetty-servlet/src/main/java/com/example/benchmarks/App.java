@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 
-public class HelloJettyServletBenchmark {
+public class App {
 
     public static class HelloServlet extends HttpServlet {
         private static final long serialVersionUID = 1L;

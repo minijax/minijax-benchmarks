@@ -14,7 +14,7 @@ import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher;
 
-public class HelloResteasyBenchmark extends Application {
+public class App extends Application {
 
     @Path("/")
     @Produces(MediaType.TEXT_PLAIN)

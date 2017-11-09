@@ -11,7 +11,7 @@ import io.dropwizard.setup.Environment;
 
 @Path("/")
 @Produces(MediaType.TEXT_PLAIN)
-public class HelloDropwizardBenchmark extends Application<Configuration> {
+public class App extends Application<Configuration> {
 
     @GET
     public static String hello() {
@@ -20,10 +20,10 @@ public class HelloDropwizardBenchmark extends Application<Configuration> {
 
     @Override
     public void run(final Configuration config, final Environment environment) {
-        environment.jersey().register(HelloDropwizardBenchmark.class);
+        environment.jersey().register(App.class);
     }
 
     public static void main(final String[] args) throws Exception {
-        new HelloDropwizardBenchmark().run("server");
+        new App().run("server");
     }
 }

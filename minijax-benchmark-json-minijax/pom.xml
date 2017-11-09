@@ -6,14 +6,19 @@
         <artifactId>minijax-benchmarks</artifactId>
         <version>0.0.2</version>
     </parent>
-    <artifactId>minijax-benchmark-hello-spark</artifactId>
+    <artifactId>minijax-benchmark-json-minijax</artifactId>
     <packaging>jar</packaging>
-    <name>minijax-benchmark-hello-spark</name>
+    <name>minijax-benchmark-json-minijax</name>
     <dependencies>
         <dependency>
-            <groupId>com.sparkjava</groupId>
-            <artifactId>spark-core</artifactId>
-            <version>2.6.0</version>
+            <groupId>org.minijax</groupId>
+            <artifactId>minijax-core</artifactId>
+            <version>${minijax.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.minijax</groupId>
+            <artifactId>minijax-json</artifactId>
+            <version>${minijax.version}</version>
         </dependency>
     </dependencies>
     <build>

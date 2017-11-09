@@ -5,7 +5,7 @@ import io.undertow.server.HttpHandler;
 import io.undertow.server.HttpServerExchange;
 import io.undertow.util.Headers;
 
-public class HelloUndertowBenchmark {
+public class App {
 
     public static void main(final String[] args) {
         Undertow.builder()

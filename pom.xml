@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.minijax</groupId>
     <artifactId>minijax-benchmarks</artifactId>
-    <version>0.0.21-SNAPSHOT</version>
+    <version>0.0.2</version>
     <packaging>pom</packaging>
     <name>minijax-benchmarks</name>
     <description>Minijax and friends benchmarks</description>
@@ -19,15 +19,25 @@
         <module>minijax-benchmark-hello-tomcat</module>
         <module>minijax-benchmark-hello-undertow</module>
         <module>minijax-benchmark-hello-undertow-servlet</module>
+        <module>minijax-benchmark-json-dropwizard</module>
+        <module>minijax-benchmark-json-jersey</module>
+        <module>minijax-benchmark-json-minijax</module>
+        <module>minijax-benchmark-json-resteasy</module>
+        <module>minijax-benchmark-json-spark</module>
+        <module>minijax-benchmark-json-springboot</module>
     </modules>
     <properties>
+        <inject.version>1</inject.version>
+        <jersey.version>2.26</jersey.version>
         <jetty.version>9.4.7.v20170914</jetty.version>
         <junit.version>4.12</junit.version>
         <logback.version>1.2.3</logback.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.javadoc.skip>true</maven.javadoc.skip>
+        <minijax.version>0.0.23-SNAPSHOT</minijax.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <resteasy.version>3.1.4.Final</resteasy.version>
         <shade.version>3.1.0</shade.version>
         <skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
         <skipStaging>true</skipStaging>

@@ -13,7 +13,7 @@ import io.undertow.servlet.Servlets;
 import io.undertow.servlet.api.DeploymentInfo;
 import io.undertow.servlet.api.DeploymentManager;
 
-public class HelloUndertowServletBenchmark {
+public class App {
 
     public static class HelloServlet extends HttpServlet {
         private static final long serialVersionUID = 1L;
@@ -26,7 +26,7 @@ public class HelloUndertowServletBenchmark {
 
     public static void main(final String[] args) throws Exception {
         final DeploymentInfo servletBuilder = Servlets.deployment()
-                .setClassLoader(HelloUndertowServletBenchmark.class.getClassLoader())
+                .setClassLoader(App.class.getClassLoader())
                 .setContextPath("/")
                 .setDeploymentName("test.war")
                 .addServlets(Servlets.servlet("HelloServlet", HelloServlet.class).addMapping("/*"));

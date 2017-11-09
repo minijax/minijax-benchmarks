@@ -6,14 +6,34 @@
         <artifactId>minijax-benchmarks</artifactId>
         <version>0.0.2</version>
     </parent>
-    <artifactId>minijax-benchmark-hello-spark</artifactId>
+    <artifactId>minijax-benchmark-json-resteasy</artifactId>
     <packaging>jar</packaging>
-    <name>minijax-benchmark-hello-spark</name>
+    <name>minijax-benchmark-json-resteasy</name>
     <dependencies>
         <dependency>
-            <groupId>com.sparkjava</groupId>
-            <artifactId>spark-core</artifactId>
-            <version>2.6.0</version>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jackson-provider</artifactId>
+            <version>${resteasy.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jaxrs</artifactId>
+            <version>${resteasy.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-servlet-initializer</artifactId>
+            <version>${resteasy.version}</version>
         </dependency>
     </dependencies>
     <build>
