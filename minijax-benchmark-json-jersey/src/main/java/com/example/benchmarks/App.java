@@ -9,6 +9,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.UriBuilder;
 
+import org.glassfish.jersey.jackson.JacksonFeature;
 import org.glassfish.jersey.jetty.JettyHttpContainerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 
@@ -26,6 +27,6 @@ public class App {
     public static void main(final String[] args) throws Exception {
         JettyHttpContainerFactory.createServer(
                 UriBuilder.fromUri("http://localhost:8080/").build(),
-                new ResourceConfig(App.class));
+                new ResourceConfig(App.class, JacksonFeature.class));
     }
 }
