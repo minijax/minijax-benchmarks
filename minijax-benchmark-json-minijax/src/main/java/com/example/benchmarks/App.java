@@ -9,7 +9,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import org.minijax.Minijax;
-import org.minijax.json.MinijaxJsonFeature;
+import org.minijax.json.JsonFeature;
 
 @Path("/")
 @Produces(MediaType.APPLICATION_JSON)
@@ -24,7 +24,7 @@ public class App {
 
     public static void main(final String[] args) {
         new Minijax()
-                .register(MinijaxJsonFeature.class)
+                .register(JsonFeature.class)
                 .register(App.class)
                 .run(8080);
     }
